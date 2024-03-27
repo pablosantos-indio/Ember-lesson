@@ -1,0 +1,11 @@
+<h2>{{@title}}</h2>
+
+<ul>
+  {{#each @listData as |item|}}
+    <li>
+      <button type="button" {{on 'click' (fn this.showItem item)}}>
+        {{item}}
+      </button>
+    </li>
+  {{/each}}
+</ul>
